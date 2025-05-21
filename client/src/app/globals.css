@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+.copy-button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease-in-out;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-in;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation: slideIn 0.5s ease-in 400ms;
+  animation-fill-mode: both;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
